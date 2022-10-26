@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Añadir usuarios</title>
+</head>
+<body>
+    <div id="container">
+        <div id="heading">
+            <h1>Usuarios</h1>
+        </div>
+        <div id="content">
+            <form id="addUsers" name="addUsers" action="">
+                <label for="userName">Nombre: </label>
+                <input type="text" name="userName" id="userName" required>
+                <span id="spanName"></span>
+                <label for="userLastName">Apellidos: </label>
+                <input type="text" name="userLastName" id="userLastName" required>
+                <span id="spanLastName"></span>
+                <label for="nick">Nombre de usuario: </label>
+                <input type="text" name="nick" id="nick" required>
+                <span id="spanNick"></span>
+                <button id="add" type="submit">Añadir Usuarios</button>
+            </form>  
+        </div>      
+    </div>
+    <div id="outputUsers" hidden>
+    </div>
+    <script src="usuarios.js"></script>
+</body>
+</html>

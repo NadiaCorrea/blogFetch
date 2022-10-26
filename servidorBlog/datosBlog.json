@@ -1,0 +1,72 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "user": "Nadia Correa",
+      "nick": "Nashiacm"
+    },
+    {
+      "id": 2,
+      "user": "Kuro Neko",
+      "nick": "Kuriqui"
+    },
+    {
+      "id": 3,
+      "user": "Cherry Liptus",
+      "nick": "Cherry"
+    },
+    {
+      "id": 4,
+      "user": " Charlotte Wishcat",
+      "nick": "Michita"
+    },
+    {
+      "user": "Pedro Caro",
+      "nick": "Pcaro",
+      "id": 5
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "My first post",
+      "date": "2022-10-13",
+      "authorId": 1
+    },
+    {
+      "id": 2,
+      "title": "Hello world!",
+      "date": "2022-10-14",
+      "authorId": 2
+    },
+    {
+      "id": 3,
+      "title": "It's Monday",
+      "date": "2022-10-15",
+      "authorId": 3
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "content": "Esto es un lío.",
+      "authorId": 4,
+      "postId": 1,
+      "timeStamp": "2022-10-13 13:30:25"
+    },
+    {
+      "id": 2,
+      "content": "Eso parece.",
+      "authorId": 5,
+      "postId": 1,
+      "timeStamp": "2022-10-13 13:35:25"
+    },
+    {
+      "id": 3,
+      "content": "Olee",
+      "authorId": 3,
+      "postId": 2,
+      "timeStamp": "2022-10-13 13:35:27"
+    }
+  ]
+}

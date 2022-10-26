@@ -1,0 +1,26 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 3%;
+}
+
+#heading h1{
+    color: red;
+    text-align: center;
+}
+
+#subheading h3{
+    color: blue;
+    font-style: italic;
+}
+
+a {
+    color: black;
+}
+
+#postList a:hover{
+    color: blue;
+}
+
+#UsersLink a {
+    color: red;
+}
