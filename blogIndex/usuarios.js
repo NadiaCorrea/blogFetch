@@ -1,5 +1,4 @@
 //Creación de usuarios con validación de diferentes campos. 
-const peticion = new XMLHttpRequest(); 
 
 //validación de campos
 const inputUserName = document.querySelector('#userName');
@@ -7,20 +6,29 @@ const inputLastName = document.querySelector('#userLastName');
 const inputNick = document.querySelector('#nick');
 const form = document.querySelector('#addUsers');
 const addButton = document.querySelector("#add");
+const retButton = document.querySelector('#goMain');
+const outputDiv = document.querySelector('#outputUsers');
+
+retButton.addEventListener('click', goMain);
+
+function goMain(){
+    history.back();
+};
+
 
 form.addEventListener('input', function (e) {
     console.log(e.target.id);
     switch (e.target.id) {
         case 'userName':
-            console.log("nombre");
+            //console.log("nombre");
             validateName();
             break;
         case 'userLastName':
-            console.log("apellido");
+            //console.log("apellido");
             validateLastName();
             break;
         case 'nick':
-            console.log("nick");
+            //console.log("nick");
             validateNick();
             break;
     }
@@ -28,38 +36,37 @@ form.addEventListener('input', function (e) {
 
 addButton.addEventListener('click', function (e){
     e.preventDefault();
+    outputDiv.innerHTML="";
     let isNameValid = validateName(),
         isLastNameValid = validateLastName(),
         isNickValid = validateNick();
     let isFormValid = isNameValid && isLastNameValid && isNickValid;
-    console.log(isFormValid);
+    //console.log(isFormValid);
     if(isFormValid){
-        console.log("insertando");
         // creo los atributos
         let uName = inputUserName.value + " " + inputLastName.value;
         let nickname = inputNick.value; 
         // creo un usuario con los valores obtenidos del formulario
         let user = {user:uName, nick:nickname} 
+        
         //si es válido se hace el post en users
-        peticion.open('POST','http://localhost:3000/users');
-        peticion.setRequestHeader('Content-type', 'application/json');
-        peticion.send(JSON.stringify(user)); //parseo al usuario
-        console.log("enviado");
-        peticion.addEventListener('load', function(){
-            //cambio el valor del resultado 201 - created post
-            if (peticion.status===201) {
-                // esto puedo añadir un mensaje en div oculto
-                console.log("Usuario añadido.");
-            } else{
-                muestraError();
+
+        fetch('http://localhost:3000/users', {
+            method: 'POST', 
+            body: JSON.stringify(user),// los datos que enviamos al servidor en el 'send'
+            headers:{'Content-Type': 'application/json'} }) 
+            
+            .then(response => {
+                if (response.ok) {
+                    outputDiv.innerHTML = "Usuario añadido";
+                    form.reset();
+                return response.json();
             }
-        });
+            return Promise.reject(response) }) 
+            
+            .catch(err => {muestraError(err);}); 
     }
 });
-
-peticion.addEventListener(' error', muestraError); 
-peticion.addEventListener(' abort', muestraError); 
-peticion.addEventListener(' timeout', muestraError); 
 
 function muestraError() {
     if (this.status) {

@@ -5,29 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalles del post</title>
+    <link rel="stylesheet" href="post.css">
 </head>
 <body>
     <div id="container">
-        <div id="Heading">
+        <div id="heading">
             <h1>Detalles del post</h1>
+            <button id="goBack">Volver</button>
         </div>
-        <div id="details">
-            <div id="title">
-                <label for="title">Título:</label>
-                <span class="result"></span>
-            </div>
-            <div id="author">
-                <label for="author">Autor:</label>
-                <span class="result"></span>
-            </div>
-            <div id="date">
-                <label for="date">Fecha de publicación:</label>
-                <span class="result"></span>
-            </div>
+        <div id="content">
+            <div id="details">
+                <div id="title">
+                    <label for="title">Título:</label>
+                    <span class="result"></span>
+                </div>
+                <div id="author">
+                    <label for="author">Autor:</label>
+                    <span class="result"></span>
+                </div>
+                <div id="date">
+                    <label for="date">Fecha de publicación:</label>
+                    <span class="result"></span>
+                </div>
 
-            <div id="comments">
-                <label for="comments">Comentarios:</label>
-                <span  class="result"></span>
+                <div id="comments">
+                    <label for="comments">Comentarios:</label>
+                    <span  class="result"></span>
+                </div>
+            </div>
+            <div id="right">
+                <div id="addComments">
+                    <label for="newComment">Añadir comentario:</label><br>
+                    <textarea name="newComment" id="newComment" cols="60" rows="10" placeholder=" Añade aquí tu comentario" required></textarea><br>
+                    <label for="usuarios">Usuario: </label>
+                    <select name="usuarios" id="usuarios" required>
+                        <option value="-1">Selecciona un usuario</option>
+                    </select>
+                    <div id="addButton">
+                        <button id="add" type="submit">Añadir</button>
+                        <span class="result"></span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

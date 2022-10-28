@@ -1,0 +1,82 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: azure;
+}
+
+#heading h1{
+    float: left;
+    color: blue;
+    text-align: center;
+    margin-left: 10%;
+}
+
+#headding input{
+    float: right;
+}
+
+#container{
+    width: 1200px;
+    align-items: center;
+}
+
+#content{
+    float: left;
+    padding-top: 20px;
+    padding-left: 50px;
+    margin-left: 80px;
+    padding-right: 30px;
+    width: 80%;
+    background-color: white;
+    border: black solid 1px;
+    border-radius: 10px;
+}
+
+#content span{
+    color: red;
+    width: 100%;
+}
+
+#add, #goMain{
+    border-radius: 5px;
+    background-color: aqua;
+    width: 200px;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 2px;
+    margin-right: 100px;
+    margin-bottom: 30px;
+}
+
+#add{
+    float:left;
+    margin-top: 20px;
+    margin-left: 40%;
+}
+
+#goMain{
+    float: right;
+    margin-top: 40px;
+    margin-right: 10%;
+}
+
+#outputUsers{
+    float: left;
+    width: 100%;
+    margin: 20px;
+    color: red;
+    font-size: xx-large;
+   
+}
+#add:hover{
+    background-color: gold;
+    cursor: pointer;
+}
+
+#goMain:hover{
+    background-color: gold;
+    cursor: pointer;
+}
+
+label{
+    margin: 20px;
+}

@@ -24,6 +24,46 @@
       "user": "Pedro Caro",
       "nick": "Pcaro",
       "id": 5
+    },
+    {
+      "user": "Chisela Colas",
+      "nick": "Chisela",
+      "id": 6
+    },
+    {
+      "user": "Claudia Car",
+      "nick": "Clau",
+      "id": 7
+    },
+    {
+      "user": " ccc cfvv",
+      "nick": "sie",
+      "id": 8
+    },
+    {
+      "user": "nadia morales",
+      "nick": "nad",
+      "id": 9
+    },
+    {
+      "user": "Rubi Parker",
+      "nick": "ubiP",
+      "id": 10
+    },
+    {
+      "user": "Rubi Parker",
+      "nick": "RubiP",
+      "id": 11
+    },
+    {
+      "user": "Alice Chase",
+      "nick": "Alice",
+      "id": 12
+    },
+    {
+      "user": "Roman Milan",
+      "nick": "Rom",
+      "id": 13
     }
   ],
   "posts": [
@@ -67,6 +107,48 @@
       "authorId": 3,
       "postId": 2,
       "timeStamp": "2022-10-13 13:35:27"
+    },
+    {
+      "content": "hola",
+      "authorId": "2",
+      "postId": "1",
+      "timeStamp": "2022-10-28 19:41:18",
+      "id": 4
+    },
+    {
+      "content": "que tal",
+      "authorId": "4",
+      "postId": "1",
+      "timeStamp": "2022-10-28 19:42:58",
+      "id": 5
+    },
+    {
+      "content": "parece que funciona",
+      "authorId": "6",
+      "postId": "1",
+      "timeStamp": "2022-10-28 19:45:09",
+      "id": 6
+    },
+    {
+      "content": "funciona?",
+      "authorId": "5",
+      "postId": "1",
+      "timeStamp": "2022-10-28 19:47:34",
+      "id": 7
+    },
+    {
+      "content": "y ahora?",
+      "authorId": "7",
+      "postId": "1",
+      "timeStamp": "2022-10-28 19:54:46",
+      "id": 8
+    },
+    {
+      "content": "Hello Kuri :)",
+      "authorId": "1",
+      "postId": "2",
+      "timeStamp": "2022-10-28 21:55:16",
+      "id": 9
     }
   ]
 }
