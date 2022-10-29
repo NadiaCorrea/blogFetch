@@ -64,6 +64,11 @@
       "user": "Roman Milan",
       "nick": "Rom",
       "id": 13
+    },
+    {
+      "user": "Juan Perez",
+      "nick": "JuanPi",
+      "id": 14
     }
   ],
   "posts": [
@@ -149,6 +154,13 @@
       "postId": "2",
       "timeStamp": "2022-10-28 21:55:16",
       "id": 9
+    },
+    {
+      "content": "what a pitty!",
+      "authorId": "4",
+      "postId": "3",
+      "timeStamp": "2022-10-29 11:38:27",
+      "id": 10
     }
   ]
 }

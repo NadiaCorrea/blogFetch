@@ -60,13 +60,20 @@ addButton.addEventListener('click', function (e){
                 if (response.ok) {
                     outputDiv.innerHTML = "Usuario añadido";
                     form.reset();
+                    setTimeout(clearOutputDiv, 3000);
                 return response.json();
+                
             }
             return Promise.reject(response) }) 
             
             .catch(err => {muestraError(err);}); 
     }
 });
+
+
+function clearOutputDiv() {
+    outputDiv.innerHTML = "";
+}
 
 function muestraError() {
     if (this.status) {
